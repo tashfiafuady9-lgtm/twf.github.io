@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Portofolio Saya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>TASHFIA WAHDAH FUADY</h1>
+    <div class="menu-toggle">☰</div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="portofolio.html">Portofolio</a></li>
+      <li><a href="contact.html" class="active">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Form Request Project -->
+  <section class="form-section">
+    <h2>Form Request Project</h2>
+    <p>Isi formulir berikut untuk memesan jasa pembuatan website atau kolaborasi proyek.</p>
+
+    <form class="contact-form">
+      <!-- Nama -->
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required><br>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required><br>
+
+      <!-- Jenis Layanan -->
+      <label for="layanan">Jenis Layanan:</label>
+      <select id="layanan" name="layanan" required>
+        <option value="">-- Pilih Layanan --</option>
+        <option value="Website Personal">Website Personal</option>
+        <option value="Toko Online">Desain Grafis & Konten Sosial Media (Canva)</option>
+        <option value="Landing Page">Jasa Administrasi dan Virtual Assistant</option>
+        <option value="Redesign UI/UX">Redesign UI/UX</option>
+      </select><br>
+
+      <!-- Metode Pembayaran -->
+      <label for="pembayaran">Metode Pembayaran:</label>
+      <select id="pembayaran" name="pembayaran" required>
+        <option value="">-- Pilih Metode Pembayaran --</option>
+        <option value="Transfer Bank">Transfer Bank</option>
+        <option value="QRIS">QRIS</option>
+        <option value="E-Wallet (DANA, OVO, Gopay)">E-Wallet (DANA, OVO, Gopay)</option>
+        <option value="Cash">Cash</option>
+      </select><br>
+
+      <!-- Pesan / Deskripsi -->
+      <label for="pesan">Deskripsi Proyek:</label>
+      <textarea id="pesan" name="pesan" rows="5" placeholder="Jelaskan proyek yang ingin Anda buat..." required></textarea>
+
+      <div class="checkbox-group">
+        <label>
+        <input type="checkbox" id="agreement" name="agreement" required>
+        Saya menyetujui syarat & ketentuan
+        </label>
+      </div><br>
+
+      <!-- Tombol Submit -->
+      <button type="submit" class="btn">Kirim Permintaan</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Tashfia Wahdah Fuady | <a href="https://itpln.ac.id" target="_blank">ITPLN</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
